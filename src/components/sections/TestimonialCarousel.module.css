@@ -1,0 +1,133 @@
+.carouselContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-4);
+  letter-spacing: 2px;
+}
+
+.content {
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.name {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.role {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  text-align: left;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.indicators {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  transition: all var(--transition-base);
+}
+
+.activeDot {
+  background: var(--color-primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+  .carousel {
+    height: 350px;
+  }
+  
+  .content {
+    font-size: var(--font-size-lg);
+  }
+  
+  .card {
+    padding: var(--space-6);
+  }
+}

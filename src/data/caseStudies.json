@@ -1,0 +1,87 @@
+[
+  {
+    "title": "AI-Powered Customer Support Platform",
+    "slug": "ai-powered-customer-support-platform",
+    "category": "AI",
+    "excerpt": "Built an intelligent customer support platform that reduced response times by 60% using AI-powered ticket classification and auto-responses.",
+    "problem": "A growing SaaS company was struggling with an overwhelming volume of customer support tickets. Their team of 5 support agents couldn't keep up with 500+ daily tickets, leading to 48-hour average response times and declining customer satisfaction scores.",
+    "solution": "Developed an AI-powered support platform that automatically classifies incoming tickets by urgency and category, generates suggested responses using OpenAI's GPT-4, and routes complex issues to the right specialist. Integrated with their existing Slack workspace for real-time notifications and built a custom dashboard for analytics.",
+    "techStack": ["React", "Node.js", "MongoDB", "OpenAI API", "n8n", "Socket.io", "Redis"],
+    "results": [
+      { "metric": "Response Time", "value": "60% faster" },
+      { "metric": "Auto-resolved", "value": "35% of tickets" },
+      { "metric": "Customer Satisfaction", "value": "94% CSAT" },
+      { "metric": "Agent Productivity", "value": "2.5x increase" }
+    ],
+    "featured": true,
+    "createdAt": "2024-10-15T10:00:00Z"
+  },
+  {
+    "title": "Multi-Tenant SaaS Analytics Dashboard",
+    "slug": "multi-tenant-saas-analytics-dashboard",
+    "category": "SaaS",
+    "excerpt": "Designed and built a multi-tenant analytics dashboard serving 10,000+ users with real-time data visualization and role-based access control.",
+    "problem": "A fintech startup needed a scalable analytics platform that could serve multiple enterprise clients, each with their own data isolation, custom dashboards, and user management. Their existing solution was a monolithic app that couldn't scale beyond 100 concurrent users.",
+    "solution": "Architected a multi-tenant SaaS platform using Next.js for server-rendered dashboards, Node.js microservices for data processing, and MongoDB with tenant-scoped data isolation. Implemented real-time WebSocket updates, advanced charting with D3.js, and a role-based permission system supporting admin, manager, and viewer roles.",
+    "techStack": ["Next.js", "Node.js", "MongoDB", "Redis", "D3.js", "WebSocket", "Docker"],
+    "results": [
+      { "metric": "Active Users", "value": "10,000+" },
+      { "metric": "Concurrent Users", "value": "5,000+" },
+      { "metric": "Page Load Time", "value": "< 1.2 seconds" },
+      { "metric": "Uptime", "value": "99.9%" }
+    ],
+    "featured": true,
+    "createdAt": "2024-08-20T10:00:00Z"
+  },
+  {
+    "title": "E-Commerce Platform with AI Recommendations",
+    "slug": "ecommerce-platform-ai-recommendations",
+    "category": "E-commerce",
+    "excerpt": "Built a high-performance e-commerce platform with AI-powered product recommendations that increased average order value by 32%.",
+    "problem": "An online retailer with 50,000+ SKUs was losing sales due to poor product discovery. Their existing platform had no personalization, slow search, and a clunky checkout process that resulted in a 78% cart abandonment rate.",
+    "solution": "Rebuilt the entire e-commerce frontend using React with server-side rendering via Next.js for SEO. Implemented AI-powered product recommendations using collaborative filtering, built an Elasticsearch-powered search with autocomplete, and designed a streamlined 2-step checkout with Stripe integration. Added real-time inventory tracking and automated email sequences.",
+    "techStack": ["React", "Next.js", "Node.js", "MongoDB", "Elasticsearch", "Stripe", "Python"],
+    "results": [
+      { "metric": "Average Order Value", "value": "+32%" },
+      { "metric": "Cart Abandonment", "value": "Reduced to 45%" },
+      { "metric": "Search Conversion", "value": "3.2x increase" },
+      { "metric": "Page Load Speed", "value": "< 0.8 seconds" }
+    ],
+    "featured": true,
+    "createdAt": "2024-06-10T10:00:00Z"
+  },
+  {
+    "title": "Enterprise Resource Planning (ERP) System",
+    "slug": "enterprise-resource-planning-system",
+    "category": "Dashboard",
+    "excerpt": "Developed a comprehensive ERP system with inventory management, HR modules, and financial reporting for a manufacturing company.",
+    "problem": "A mid-size manufacturing company was managing operations across 5 departments using spreadsheets and disconnected tools. This led to data inconsistencies, delayed reporting, and an inability to make real-time business decisions.",
+    "solution": "Designed and built a comprehensive ERP system using Angular for the frontend with a modular architecture, Node.js microservices for the backend, and MongoDB for flexible data storage. Modules included inventory management with barcode scanning, HR with payroll integration, financial reporting with automated reconciliation, and a real-time executive dashboard.",
+    "techStack": ["Angular", "Node.js", "MongoDB", "Express", "Python", "Docker", "AWS"],
+    "results": [
+      { "metric": "Reporting Time", "value": "85% reduction" },
+      { "metric": "Data Accuracy", "value": "99.7%" },
+      { "metric": "Operational Cost", "value": "40% savings" },
+      { "metric": "User Adoption", "value": "95% within 3 months" }
+    ],
+    "featured": false,
+    "createdAt": "2024-04-05T10:00:00Z"
+  },
+  {
+    "title": "Real-Time Collaboration Tool",
+    "slug": "real-time-collaboration-tool",
+    "category": "SaaS",
+    "excerpt": "Created a real-time collaboration platform with live document editing, video conferencing integration, and project management features.",
+    "problem": "A remote-first startup with 200+ team members across 12 countries needed a unified collaboration tool. They were paying for 8 different subscriptions (Notion, Slack, Zoom, Jira, etc.) totaling $45,000/month, and data was siloed across platforms.",
+    "solution": "Built a unified collaboration platform with real-time document editing using CRDTs (Conflict-free Replicated Data Types), integrated video calling via WebRTC, kanban project boards, and a team chat system. Used a microservices architecture with event-driven communication for scalability.",
+    "techStack": ["React", "Node.js", "MongoDB", "WebRTC", "Socket.io", "Redis", "Kubernetes"],
+    "results": [
+      { "metric": "Tool Consolidation", "value": "8 tools → 1" },
+      { "metric": "Monthly Savings", "value": "$38,000" },
+      { "metric": "Team Productivity", "value": "+28%" },
+      { "metric": "Active Daily Users", "value": "200+" }
+    ],
+    "featured": false,
+    "createdAt": "2024-02-15T10:00:00Z"
+  }
+]
