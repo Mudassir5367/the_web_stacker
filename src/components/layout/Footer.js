@@ -12,11 +12,10 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
-              <span className={styles.logoIcon}>{'</>'}</span>
-              <span className={styles.logoText}>DevStudio</span>
+              <img src="/logo.png" alt="thewebstacker" className={styles.logoImage} />
             </Link>
             <p className={styles.brandDesc}>
-              Senior Full Stack & AI Automation Engineer helping startups build scalable SaaS products.
+              Modern Full Stack Development & AI Automation. We build scalable SaaS products that help you grow.
             </p>
             <div className={styles.socials}>
               <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={styles.socialLink}>
@@ -67,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>© {currentYear} DevStudio. All rights reserved.</p>
+          <p>© {currentYear} thewebstacker. All rights reserved.</p>
           <p className={styles.tagline}>Built with Next.js & Node.js</p>
         </div>
       </div>

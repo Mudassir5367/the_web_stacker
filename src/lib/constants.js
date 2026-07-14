@@ -1,15 +1,15 @@
 export const siteConfig = {
-  name: 'Senior Full Stack Engineer',
-  title: 'Senior Full Stack & AI Automation Engineer',
-  description: 'Senior Full Stack Engineer specializing in MEAN, MERN, Next.js, Python, and AI Automation. Helping startups build scalable SaaS products.',
-  url: 'https://yourdomain.com',
-  email: 'hello@yourdomain.com',
+  name: 'thewebstacker',
+  title: 'thewebstacker | Modern Web & AI Automation Studio',
+  description: 'We Build. You Grow. High-performance Next.js SaaS, Full Stack Applications, and AI Automation solutions by thewebstacker.',
+  url: 'https://thewebstacker.com',
+  email: 'hello@thewebstacker.com',
   social: {
-    github: 'https://github.com/yourusername',
-    linkedin: 'https://linkedin.com/in/yourusername',
-    twitter: 'https://twitter.com/yourusername',
+    github: 'https://github.com/thewebstacker',
+    linkedin: 'https://linkedin.com/company/thewebstacker',
+    twitter: 'https://twitter.com/thewebstacker',
   },
-  calendlyUrl: 'https://calendly.com/yourusername/30min',
+  calendlyUrl: 'https://calendly.com/thewebstacker/30min',
 };
 
 export const services = [

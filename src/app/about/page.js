@@ -19,13 +19,13 @@ export default function AboutPage() {
           <div className={styles.grid}>
             <div className={styles.content}>
               <h1 className={styles.title}>
-                Hi, I'm a <span className="gradient-text">Senior Full Stack Engineer</span>
+                Hi, we are <span className="gradient-text">thewebstacker</span>
               </h1>
               <p className={styles.bio}>
-                With over 5 years of experience in the tech industry, I specialize in building scalable SaaS products, complex enterprise applications, and intelligent AI automation workflows.
+                With over 5 years of experience in the tech industry, we specialize in building scalable SaaS products, complex enterprise applications, and intelligent AI automation workflows.
               </p>
               <p className={styles.bio}>
-                My approach combines deep technical expertise with a strong focus on user experience and business outcomes. I don't just write code; I solve business problems and build products that users love.
+                Our approach combines deep technical expertise with a strong focus on user experience and business outcomes. We don't just write code; we solve business problems and build products that users love.
               </p>
               <div className={styles.values}>
                 <div className={styles.valueItem}>
@@ -44,11 +44,8 @@ export default function AboutPage() {
             </div>
             
             <div className={styles.imageContainer}>
-              <div className={styles.imageWrapper}>
-                {/* Using a placeholder gradient since we don't have a photo */}
-                <div className={styles.photoPlaceholder}>
-                  <span>Senior Dev</span>
-                </div>
+              <div className={styles.logoWrapper}>
+                <img src="/logo.png" alt="thewebstacker logo" className={styles.logoImageAbout} />
               </div>
             </div>
           </div>

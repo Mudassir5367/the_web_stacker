@@ -32,7 +32,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Senior Full Stack & AI Automation Engineer helping startups design, build, and scale world-class software solutions.
+            We design, build, and scale world-class software solutions. Modern Full Stack Development & AI Automation.
           </motion.p>
           
           <motion.div
@@ -64,7 +64,7 @@ export default function HeroSection() {
             </div>
             <div className={styles.terminalBody}>
               <p><span className={styles.prompt}>~/dev</span> $ npm start</p>
-              <p className={styles.output}>&gt; developer-portfolio@1.0.0 start</p>
+              <p className={styles.output}>&gt; thewebstacker@1.0.0 start</p>
               <p className={styles.output}>&gt; node server.js</p>
               <br />
               <p className={styles.success}>🚀 Server running in production mode</p>

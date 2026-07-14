@@ -7,7 +7,7 @@ import fallbackCaseStudies from '@/data/caseStudies.json';
 
 export const metadata = {
   title: 'Case Studies & Portfolio',
-  description: 'Explore my recent projects, from SaaS platforms and AI integrations to enterprise dashboards.',
+  description: 'Explore our recent projects, from SaaS platforms and AI integrations to enterprise dashboards.',
 };
 
 async function getCaseStudies(category) {
@@ -48,7 +48,7 @@ export default async function CaseStudiesPage({ searchParams }) {
           <SectionHeading
             label="Portfolio"
             title="Case Studies"
-            description="Deep dives into the problems I've solved, the tech stacks used, and the business impact delivered."
+            description="Deep dives into the problems we've solved, the tech stacks used, and the business impact delivered."
             align="center"
           />
           

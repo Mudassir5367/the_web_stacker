@@ -46,8 +46,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <nav className={`${styles.nav} container`}>
         <Link href="/" className={styles.logo} id="nav-logo">
-          <span className={styles.logoIcon}>{'</>'}</span>
-          <span className={styles.logoText}>DevStudio</span>
+          <img src="/logo.png" alt="thewebstacker" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Navigation */}

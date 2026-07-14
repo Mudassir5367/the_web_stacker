@@ -64,36 +64,41 @@
   justify-content: center;
 }
 
-.imageWrapper {
+.logoWrapper {
   position: relative;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/2;
   border-radius: var(--radius-2xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
-}
-
-.imageWrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius-2xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  pointer-events: none;
-}
-
-.photoPlaceholder {
-  width: 100%;
-  height: 100%;
-  background: var(--gradient-primary);
+  background: #ffffff;
+  border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: var(--font-size-3xl);
-  font-weight: 800;
-  letter-spacing: -1px;
+  padding: var(--space-4);
+  transition: all var(--transition-base);
+}
+
+.logoWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
+}
+
+.logoImageAbout {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: filter var(--transition-base);
+}
+
+[data-theme='dark'] .logoWrapper {
+  background: #0a0f1e;
+}
+
+[data-theme='dark'] .logoImageAbout {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 @media (max-width: 968px) {

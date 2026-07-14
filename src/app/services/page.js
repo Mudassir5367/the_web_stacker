@@ -42,7 +42,7 @@ export default function ServicesPage() {
         <div className="container">
           <SectionHeading
             label="Methodology"
-            title="How I Work"
+            title="How We Work"
             description="A proven, transparent process for delivering high-quality software on time and within budget."
             align="center"
           />

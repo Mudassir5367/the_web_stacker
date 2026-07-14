@@ -52,7 +52,7 @@ export default function ContactPage() {
               <div className={styles.successMessage}>
                 <div className={styles.successIcon}>✓</div>
                 <h3>Message Sent Successfully!</h3>
-                <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
                 <Button onClick={() => setStatus('idle')} variant="outline">
                   Send Another Message
                 </Button>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows="5"
-                    placeholder="Tell me about your project, goals, and timeline..."
+                    placeholder="Tell us about your project, goals, and timeline..."
                   />
                 </div>
 
@@ -149,7 +149,7 @@ export default function ContactPage() {
           <div className={styles.infoContainer}>
             <div className={styles.infoCard}>
               <h3>Book a Discovery Call</h3>
-              <p>Prefer to chat? Schedule a free 30-minute consultation directly on my calendar.</p>
+              <p>Prefer to chat? Schedule a free 30-minute consultation directly on our calendar.</p>
               
               <div className={styles.calendlyPlaceholder}>
                 <div className={styles.calendlyIcon}>📅</div>
@@ -171,11 +171,11 @@ export default function ContactPage() {
               <h3>FAQ</h3>
               <div className={styles.faqItem}>
                 <h4>What is your typical response time?</h4>
-                <p>I aim to respond to all inquiries within 24 business hours.</p>
+                <p>We aim to respond to all inquiries within 24 business hours.</p>
               </div>
               <div className={styles.faqItem}>
                 <h4>Do you work with international clients?</h4>
-                <p>Yes, I work primarily with clients from the US and Europe, accommodating different time zones.</p>
+                <p>Yes, we work primarily with clients from the US and Europe, accommodating different time zones.</p>
               </div>
             </div>
           </div>

@@ -30,24 +30,19 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  font-weight: 700;
-  font-size: var(--font-size-xl);
   text-decoration: none;
   z-index: 1001;
 }
 
-.logoIcon {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-family: var(--font-mono);
-  font-size: var(--font-size-lg);
+.logoImage {
+  height: 64px;
+  width: auto;
+  display: block;
+  transition: filter var(--transition-base);
 }
 
-.logoText {
-  color: var(--text-primary);
+[data-theme='dark'] .logoImage {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 /* Desktop Links */
