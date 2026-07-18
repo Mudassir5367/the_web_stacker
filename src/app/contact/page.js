@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { api } from '@/lib/api';
+import { siteConfig } from '@/lib/constants';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Button from '@/components/ui/Button';
 import styles from './ContactPage.module.css';
@@ -148,21 +149,34 @@ export default function ContactPage() {
           {/* Calendly & Info */}
           <div className={styles.infoContainer}>
             <div className={styles.infoCard}>
-              <h3>Book a Discovery Call</h3>
-              <p>Prefer to chat? Schedule a free 30-minute consultation directly on our calendar.</p>
+              <h3>Quick Chat</h3>
+              <p>Prefer to chat? Send us a quick message directly on WhatsApp.</p>
               
+              {/* Calendly Feature Temporarily Hidden
               <div className={styles.calendlyPlaceholder}>
                 <div className={styles.calendlyIcon}>📅</div>
-                <p>Calendly Embed Placeholder</p>
-                <small>Add your Calendly URL in constants.js</small>
-                {/* In real usage, you'd put the Calendly iframe here */}
+                <p>Book a Call via Calendly</p>
                 <Button 
-                  href="https://calendly.com" 
+                  href={siteConfig.calendlyUrl} 
                   target="_blank" 
                   variant="outline" 
                   className={styles.calendlyBtn}
                 >
                   Open Calendly
+                </Button>
+              </div>
+              */}
+
+              <div className={styles.calendlyPlaceholder} style={{marginTop: '1rem'}}>
+                <div className={styles.calendlyIcon}>💬</div>
+                <p>Quick Chat on WhatsApp</p>
+                <Button 
+                  href={siteConfig.whatsappUrl} 
+                  target="_blank" 
+                  variant="outline" 
+                  className={styles.calendlyBtn}
+                >
+                  Message on WhatsApp
                 </Button>
               </div>
             </div>

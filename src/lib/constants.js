@@ -3,13 +3,14 @@ export const siteConfig = {
   title: 'thewebstacker | Modern Web & AI Automation Studio',
   description: 'We Build. You Grow. High-performance Next.js SaaS, Full Stack Applications, and AI Automation solutions by thewebstacker.',
   url: 'https://thewebstacker.com',
-  email: 'hello@thewebstacker.com',
+  email: 'contactusthewebstacker@gmail.com',
   social: {
     github: 'https://github.com/thewebstacker',
     linkedin: 'https://linkedin.com/company/thewebstacker',
     twitter: 'https://twitter.com/thewebstacker',
   },
   calendlyUrl: 'https://calendly.com/thewebstacker/30min',
+  whatsappUrl: 'https://wa.me/19342600330',
 };
 
 export const services = [
