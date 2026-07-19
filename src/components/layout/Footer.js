@@ -60,7 +60,7 @@ export default function Footer() {
             <h4 className={styles.columnTitle}>Get in Touch</h4>
             <ul className={styles.links}>
               <li><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></li>
-              <li><Link href="/contact">Book a Call</Link></li>
+              <li><a href="tel:+19342600330">+1 (934) 260-0330</a></li>
             </ul>
           </div>
         </div>

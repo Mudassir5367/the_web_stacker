@@ -5,7 +5,7 @@ export const siteConfig = {
   url: 'https://thewebstacker.com',
   email: 'contactusthewebstacker@gmail.com',
   social: {
-    github: 'https://github.com/thewebstacker',
+    github: 'https://github.com/Mudassir5367/',
     linkedin: 'https://linkedin.com/company/thewebstacker',
     twitter: 'https://twitter.com/thewebstacker',
   },

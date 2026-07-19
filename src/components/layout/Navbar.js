@@ -73,9 +73,11 @@ export default function Navbar() {
 
         <div className={styles.actions}>
           <ThemeToggle />
+          {/* Book a Call button — temporarily hidden
           <Link href="/contact" className={styles.ctaButton} id="nav-cta">
             Book a Call
           </Link>
+          */}
 
           {/* Mobile Hamburger */}
           <button

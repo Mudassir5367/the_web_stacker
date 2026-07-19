@@ -32,6 +32,8 @@ export default function ContactPage() {
         access_key: 'd2b51da3-cb34-4614-bfec-2bad3249dc55',
         subject: `New Contact Form Submission from ${formData.name}`,
         from_name: 'TheWebStacker Website',
+        replyto: formData.email,
+        botcheck: '',
       };
 
       const res = await fetch('https://api.web3forms.com/submit', {
