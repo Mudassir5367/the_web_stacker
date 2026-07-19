@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { api } from '@/lib/api';
 import { siteConfig } from '@/lib/constants';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Button from '@/components/ui/Button';
@@ -27,7 +26,26 @@ export default function ContactPage() {
     setStatus('loading');
     
     try {
-      await api.submitContact(formData);
+      // Pure Frontend — sends directly to Web3Forms, NO backend needed
+      const payload = {
+        ...formData,
+        access_key: 'd2b51da3-cb34-4614-bfec-2bad3249dc55',
+        subject: `New Contact Form Submission from ${formData.name}`,
+        from_name: 'TheWebStacker Website',
+      };
+
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || 'Failed to send message');
+
       setStatus('success');
       setFormData({ name: '', email: '', company: '', budget: '', message: '' });
     } catch (error) {

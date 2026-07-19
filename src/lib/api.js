@@ -21,11 +21,27 @@ async function fetchAPI(endpoint, options = {}) {
 
 export const api = {
   // Contact
-  submitContact: (formData) =>
-    fetchAPI('/contact', {
+  submitContact: async (formData) => {
+    // Pure Frontend Email Sending using Web3Forms
+    const payload = {
+      ...formData,
+      access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE", // We will replace this
+      subject: `New Contact Form Submission from ${formData.name}`,
+    };
+
+    const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: JSON.stringify(formData),
-    }),
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload),
+    });
+    
+    const data = await res.json();
+    if (!data.success) throw new Error(data.message || 'Failed to send message');
+    return data;
+  },
 
   // Blog
   getBlogs: (params = {}) => {
